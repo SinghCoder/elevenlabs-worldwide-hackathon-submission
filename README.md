@@ -123,9 +123,13 @@ Configure these in your ElevenLabs agent to receive call context:
 
 ### Custom Tools
 
+Create a custom tool in your ElevenLabs agent:
+
 **add_person_to_current_call** - Adds a participant to the current conference call.
 
-Configure as a webhook tool pointing to `{PUBLIC_BASE_URL}/add-participant` with properties:
+1. In your ElevenLabs agent, go to **Tools** → **Add Tool** → **Webhook**
+2. Set the webhook URL to `{PUBLIC_BASE_URL}/add-participant`
+3. Add the following properties:
 
 | Property | Type | Required | Description |
 |----------|------|----------|-------------|
